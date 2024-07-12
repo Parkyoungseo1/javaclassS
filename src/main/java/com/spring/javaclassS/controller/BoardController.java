@@ -218,8 +218,8 @@ public class BoardController {
 		List<BoardVO> vos = boardService.getBoardSearchList(pageVO.getStartIndexNo(), pageSize, search, searchString);
 
 		String searchTitle = "";
-		if(pageVO.getSearch().equals("title")) searchTitle = "글제목";
-		else if(pageVO.getSearch().equals("nickName")) searchTitle = "글쓴이";
+		if(pageVO.getSearh().equals("title")) searchTitle = "글제목";
+		else if(pageVO.getSearh().equals("nickName")) searchTitle = "글쓴이";
 		else searchTitle = "글내용";
 		
 		model.addAttribute("vos", vos);

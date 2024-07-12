@@ -1,4 +1,4 @@
-show tables;
+dshow tables;
 
 create table board2 (
   idx  int not null auto_increment,		/* 게시글의 고유번호 */
